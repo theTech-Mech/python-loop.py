@@ -1,0 +1,78 @@
+a = " Why fit in , When you are Born to Stand out!"
+# length of the string
+b = (len(a))
+print("the length of the string is :",  b)
+
+# number of time o occuring
+print("the number of time o occuring is ", a.count("o"))
+
+#convert in lower and upper case
+x = (a.lower())
+print(x)
+y = (a.upper())
+print(y)
+
+#convert string into title
+z = a.title()
+print(z)
+
+# index number of "fit in"
+print(a.find("fit in"))
+
+
+
+# string problems
+a = " OOTD.YOLO.ASAP.BRB.GTG.OTW"
+
+#separate by comma
+b = a.split (",")
+print(b)
+
+# sort alphabetically
+c = input(" Enter anything : ")
+b = sorted (c)
+print(b)
+
+# remove character
+d = "hello"
+b = d.replace("e ","")
+print(b)
+
+# check number of occurance
+e = ("the monkey just with other monkey to meet monkey")
+b = e.count ("monkey")
+print(" monkey occurs in the sentence : ",b)
+
+#input from user as string and reverse it
+a = input("enter any string : ")
+print(a[ : : -1])
+
+#check string contain only digit
+a = input("enter anything : ")
+b = (a,a.isdigit())
+if b == True:
+    print ( "string contain only digits")
+else:
+    print ( "it does not contain only digits")
+
+# check string is palindrome or not
+a = input("enter any string : ")
+rev = a [::-1]
+if rev == a:
+    print ( "string is palindrome")
+else:
+    print ("string is not palindrome")
+
+# number of vowels in string
+a = input("enter any string : ")
+vowels = 0
+for i in a :
+    if i == "a" or i == "e" or i == "i" or i == "o" or i == "u"or i == "A" or i== "E" or i== "I" or i== "O" or i== "U":
+    vowels += 1
+
+    print ("the number of vowels :", vowels)
+
+
+# check if every words start with capital letter
+a = int(input("enter any string : "))
+print(a,a.istitle())
